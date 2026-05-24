@@ -9,9 +9,9 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
 
-    defaults:
-      run:
-        working-directory: Backend/UserService   # remove if repo root IS UserService
+    # defaults:
+    #   run:
+    #     working-directory: Backend/UserService   # remove if repo root IS UserService
 
     steps:
       - name: Checkout
