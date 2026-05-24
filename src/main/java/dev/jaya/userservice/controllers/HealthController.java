@@ -8,6 +8,6 @@ public class HealthController {
 
     @GetMapping("/")
     public String health() {
-        return "UserService is running";
+        return "User Service is deploying and running automatically via CI/CD";
     }
 }
