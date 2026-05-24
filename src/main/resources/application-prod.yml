@@ -1,0 +1,25 @@
+spring:
+  config:
+    import: aws-secretsmanager:prod/userservice/db
+
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: ${mailname}
+    password: ${mailpassword}
+
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
