@@ -26,6 +26,9 @@ HELP.md
 ### VS Code ###
 .vscode/
 
+# GitHub Actions (not needed on EB)
+.github/
+
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
