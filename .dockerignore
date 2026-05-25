@@ -1,6 +1,12 @@
 .git
 .gitignore
 node_modules
-target
 .elasticbeanstalk
 .idea
+target/classes
+target/test-classes
+target/surefire-reports
+target/maven-status
+target/maven-archiver
+target/generated-sources
+target/generated-test-sources
