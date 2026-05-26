@@ -1,7 +1,6 @@
 spring:
   config:
     import: aws-secretsmanager:prod/userservice/db
-
   datasource:
     url: ${DB_URL}
     username: ${DB_USERNAME}
@@ -23,3 +22,8 @@ spring:
           auth: true
           starttls:
             enable: true
+
+jwt:
+  secret: ${JWT_SECRET}
+  expiration: 3600000
+  refresh-expiration: 604800000
